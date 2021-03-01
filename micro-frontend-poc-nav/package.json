@@ -1,0 +1,62 @@
+{
+  "name": "micro-frontend-poc-nav",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js --mode=development",
+    "build": "webpack --config webpack.config.prod.js --mode=production",
+    "dev": "webpack serve --config webpack.config.js --mode=development",
+    "serve": "serve dist -p 3002",
+    "clean": "rm -rf dist",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "bundle-loader": "^0.5.6",
+    "css-loader": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.1",
+    "html-webpack-plugin": "^5.2.0",
+    "interpolate-html-plugin": "^4.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
